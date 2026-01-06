@@ -1,0 +1,19 @@
+name: first-workflow
+
+on : push 
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome
+        run: echo "Hi, This Is Tannu Ahuja"
+
+      - name: List files
+        run: ls
+        
+      - name: Run file
+        run: python first.py
+        
+
+
