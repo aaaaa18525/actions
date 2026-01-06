@@ -13,7 +13,7 @@ jobs:
         run: ls
         
       - name: Run file
-        run: python first.py
-        
+        run: cat README.md
+
 
 
