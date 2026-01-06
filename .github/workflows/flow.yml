@@ -19,3 +19,6 @@ jobs:
 
       - name: Read file
         run: cat README.md
+
+      - name: Run python file
+        run: python first.py
