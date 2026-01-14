@@ -11,14 +11,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # multi line commands 
       - name: Welcome message
-        run: echo "My first GitHub Actions Job"
+        run: |
+            echo "My first github actions workflow"
+            run ls -ltra
+            run cat README.md
+            run python first.py
 
-      - name: List files
-        run: ls
 
-      - name: Read file
-        run: cat README.md
+      # - name: List files
+      #   run: ls
 
-      - name: Run python file
-        run: python first.py
+      # - name: Read file
+      #   run: cat README.md
+
+      # - name: Run python file
+      #   run: python first.py
