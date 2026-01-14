@@ -34,14 +34,18 @@ jobs:
   second_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Install cowsay program
-        run: sudo apt-get install cowsay -y 
+      # we are running these commands using shell script 
+      # - name: Install cowsay program
+      #   run: sudo apt-get install cowsay -y 
 
-      - name: Run cowsay command
-        run: cowsay -f dragon "run for cover, I AM DRAGON...RRR" >> dragon.txt
+      # - name: Run cowsay command
+      #   run: cowsay -f dragon "run for cover, I AM DRAGON...RRR" >> dragon.txt
 
-      - name: Read dragon file
-        run: cat dragon.txt
+      # - name: Read dragon file
+      #   run: cat dragon.txt
+
+      - name: Executing shell script
+        run: ./ascii-script.sh
 
 
 
