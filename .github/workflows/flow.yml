@@ -41,7 +41,7 @@ jobs:
         run: cowsay -f dragon "run for cover, I AM DRAGON...RRR" >> dragon.txt
 
       - name: Read dragon file
-        run: ls dragon.txt
+        run: cat dragon.txt
 
 
 
