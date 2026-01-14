@@ -45,7 +45,7 @@ jobs:
       #   run: cat dragon.txt
 
       - name: Executing shell script
-        run: |
+        run: | 
         chmod +x ascii-script.sh
         ./ascii-script.sh
 
